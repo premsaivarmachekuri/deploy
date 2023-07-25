@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav-container{
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    color:#fff;
+}
+.container{
+    display: flex;
+    align-items: center;  
+    padding: 0 2rem; 
+    height: 100%;
+}
+.logo{
+    align-self: center;
+    margin-top: 0.4rem;
+}
+.items-container{
+    margin-left: auto;
+    width: 40%;
+    margin-right: 2rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+li{
+    margin-left: auto;
+}
+
+div.bg-image {
+    background-image: url('https://cs.ieeebangalore.org/wp-content/uploads/2021/02/4-1.png');
+    background-size: cover;
+    width: 100%;
+    height:60vh;
+}
+.image-logo{
+    position: relative;
+    right: 1rem;
+    width:90px;
+    margin-left:auto;
+}
+.aboutus{
+    width:90%;
+    margin:auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.club-heading{
+    color:gray;
+}
+.club-description{
+    color:#333;
+}
+
+.events-container{
+    width:85%;
+    text-align: center;
+    margin: auto;
+    margin-top: 4rem;
+}
+.event-heading{
+    color:gray;
+    padding-top: 2rem;
+}
+button{
+    background-color: yellow;
+    border: 0;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+.event{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+}
+.event1{
+    width: 60%;
+    padding: 2rem;
+}
+.heading{
+    font-size:1.5rem
+}
+.event1-image{
+    max-width: 400px;
+    min-width: 200px;
+    width: 100%;
+    flex-shrink: 1;
+}
+.read-more{
+    color: #fff;
+    background-color: #333;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.type1{
+    flex-direction: row-reverse;
+}
+
+.content-wrapper {
+    overflow: auto;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2rem;
+    z-index: 1;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+
+.media{
+    border-radius: 50%;
+    margin: 0.2rem;
+    width:50px;
+    position: sticky;
+}
+
+@media (max-width:768px){
+    .events-container{
+        width:90%;
+    }
+    .event{
+        flex-direction: column;
+    }
+    .event1{
+        width:100%
+    }
+    .type1{
+        flex-direction: column;
+    }
+    .items-container{
+        display: none;
+    }
+}
